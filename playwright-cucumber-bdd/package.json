@@ -1,0 +1,35 @@
+{
+  "name": "playwright-cucumber-bdd",
+  "version": "1.0.0",
+  "description": "Playwright TypeScript Cucumber BDD Framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js",
+    "test:headed": "cucumber-js --world-parameters.headed=true",
+    "test:debug": "cucumber-js --world-parameters.debug=true",
+    "test:parallel": "cucumber-js --parallel 2",
+    "report": "npx playwright show-report reports/html",
+    "clean": "rm -rf reports/ test-results/ node_modules/"
+  },
+  "keywords": [
+    "playwright",
+    "cucumber",
+    "bdd",
+    "typescript",
+    "testing"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.0.1",
+    "@cucumber/pretty-formatter": "^1.0.0",
+    "@playwright/test": "^1.40.0",
+    "@types/chai": "^5.2.3",
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.0"
+  },
+  "dependencies": {
+    "chai": "^4.3.10"
+  }
+}
